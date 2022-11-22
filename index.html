@@ -19,13 +19,22 @@
       background-color: #38423B;
     }
     
-    h1 {
+    hgroup {
       z-index: 10;
       position: absolute;
       color: #9B5DE5;
       top: 50%;
+      mix-blend-mode: plus-lighter;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    
+    h1 {
+      font-size: 4rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
     }
     
     #visual {
@@ -39,8 +48,11 @@
   </style>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  
+  <hgroup>
+    <h1>Welcome!</h1>
+    <h2>I'm Thomas Abbondi</h2>
+  </hgroup>
+
   <svg id="visual"
     viewBox="0 0 1920 1080"
     width="1920"
