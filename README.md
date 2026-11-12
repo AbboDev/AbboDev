@@ -39,21 +39,25 @@ Visit [http://localhost:3000](http://localhost:3000) to view the site in your br
 
 ---
 
-## 🚀 Building & GitHub Pages Deployment
+## 🚀 Building & Deployment (Vercel)
 
-The project is preconfigured for static export (`output: 'export'`) in `next.config.mjs` and includes a GitHub Actions workflow in `.github/workflows/deploy.yml`.
+The project is optimized for deployment on [Vercel](https://vercel.com).
 
-### Automatic Deployment (GitHub Actions)
+### Automatic Deployment with Vercel
 
-1. Push your changes to `main` or `master`.
-2. In your GitHub repository settings, go to **Settings > Pages > Build and deployment**.
-3. Under **Source**, select **GitHub Actions**.
-4. GitHub Actions will automatically build the project and deploy the static site to GitHub Pages!
+1. Push your changes to GitHub (`main` or `master`).
+2. Go to [vercel.com/new](https://vercel.com/new) and import the **AbboDev** repository.
+3. Vercel automatically detects **Next.js** and **pnpm** from `packageManager` in `package.json`.
+4. Click **Deploy**. Any future commits pushed to `main` will trigger automatic preview and production deployments.
 
-### Manual Build
+### Manual Production Build
 
 ```bash
 pnpm build
 ```
 
-The static HTML, CSS, and JS bundles will be generated in the `out/` directory with `.nojekyll` included.
+To preview the production build locally:
+
+```bash
+pnpm start
+```
