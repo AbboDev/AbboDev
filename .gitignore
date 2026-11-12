@@ -34,3 +34,5 @@ next-env.d.ts
 
 .vercel
 .env*
+.agents/hooks.json
+.cursor/hooks.json
