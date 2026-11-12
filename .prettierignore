@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+build
+coverage
+dist
+public
+legacy
+.pnp
+.pnp.js
+*.tsbuildinfo
+next-env.d.ts
+pnpm-lock.yaml
+.git
